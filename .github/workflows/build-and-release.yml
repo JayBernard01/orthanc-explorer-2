@@ -46,8 +46,7 @@ jobs:
     - name: Build and Push Docker Image
       run: |
         echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-        REPO_NAME=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
-        docker build -t ghcr.io/${REPO_NAME}/oe2-dist-files:latest -f WebApplication/Dockerfile WebApplication
-        docker push ghcr.io/${REPO_NAME}/oe2-dist-files:latest
+        docker build -t ghcr.io/orthanc-explorer-2/oe2-dist-files:latest .
+        docker push ghcr.io/orthanc-explorer-2/oe2-dist-files:latest
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
