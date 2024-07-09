@@ -14,6 +14,7 @@ export default {
 </script>
 <template>
     <div class="alert alert-danger" role="alert">
+        <h1>faisons un test ridicule pour voir si ca fonctionne!</h1>
         {{$t('page_not_found')}} <br/>
         {{path}}
     </div>

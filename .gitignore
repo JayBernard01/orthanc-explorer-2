@@ -6,3 +6,13 @@ dist-ssr
 *.local
 .vscode/
 *~
+build-lsb
+build-system
+CMakeFiles
+jsoncpp-0.10.7
+orthanc
+CMakeCache.txt
+Makefile
+boost_1_85_0/
+cmake_install.cmake
+e2fsprogs-1.44.5/
