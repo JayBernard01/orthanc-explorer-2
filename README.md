@@ -146,3 +146,8 @@ git push
 ### Contributions
 
 Feel free to fork this project, modify it and submit pull requests.
+
+### building with docker
+```bash
+docker build -t custom-orthanc .
+```
